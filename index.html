@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="청소가 필요한 이웃과 동네 청소 파트너를 연결하는 iOS 앱, 언니의청소.">
+  <meta name="theme-color" content="#f9f9f6">
+  <title>언니의청소 | 우리 동네에서 만나는 청소</title>
+  <link rel="icon" href="brand-mark.png" type="image/png">
+  <style>
+    :root {
+      color-scheme: light;
+      background: #f9f9f6;
+      color: #1b2e32;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+      line-height: 1.6;
+      word-break: keep-all;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; }
+    .shell { width: min(calc(100% - 2.5rem), 65rem); margin-inline: auto; }
+    .brand {
+      display: flex; align-items: center; gap: .65rem;
+      min-height: 5.25rem; font-size: 1.0625rem; font-weight: 750;
+    }
+    .brand img { width: 2.5rem; height: 2.5rem; border-radius: .65rem; }
+    .hero {
+      background: #d9eef0; border: 1px solid #c0dfe4;
+      border-radius: 1.75rem; padding: clamp(1.5rem, 6vw, 4.5rem);
+    }
+    .status {
+      display: inline-block; margin: 0 0 1rem; padding: .25rem .75rem;
+      border-radius: 2rem; background: #fff; color: #275a63;
+      font-size: .875rem; font-weight: 700;
+    }
+    h1, h2, p { margin: 0; }
+    h1 {
+      color: #173a41; font-size: clamp(2.15rem, 6vw, 4rem);
+      font-weight: 800; line-height: 1.2; letter-spacing: -.045em;
+    }
+    .lede { max-width: 35rem; margin-top: 1rem; font-size: clamp(1rem, 2.5vw, 1.2rem); color: #314d52; }
+    .roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-block: 1rem 2.5rem; }
+    .role { background: #fff; border: 1px solid #dae5e5; border-radius: 1.25rem; padding: 1.5rem; }
+    .role h2 { color: #265760; font-size: 1.2rem; margin-bottom: .35rem; }
+    .role p { color: #41565b; }
+    footer { border-top: 1px solid #d9e3e3; padding-block: 1rem 2rem; color: #51666a; font-size: .875rem; }
+    @media (max-width: 36rem) { .roles { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="shell brand">
+    <img src="brand-mark.png" alt="" width="40" height="40">
+    <span>언니의청소</span>
+  </header>
+  <main class="shell">
+    <section class="hero" aria-labelledby="intro">
+      <p class="status">iOS 앱 출시 준비 중</p>
+      <h1 id="intro">우리 동네에서<br>만나는 청소</h1>
+      <p class="lede">언니의청소는 청소가 필요한 이웃과 가까운 곳에서 청소 일감을 찾는 파트너를 연결하는 앱입니다.</p>
+    </section>
+    <section class="roles" aria-label="앱에서 이용할 수 있는 역할">
+      <article class="role">
+        <h2>청소를 요청하는 의뢰인</h2>
+        <p>청소할 곳의 사진과 원하는 일정, 청소 범위를 정리해 요청하는 흐름을 준비하고 있어요.</p>
+      </article>
+      <article class="role">
+        <h2>일감을 찾는 청소 파트너</h2>
+        <p>동네 일감의 사진과 일정, 금액을 확인하고 자신에게 맞는 청소를 찾는 흐름을 준비하고 있어요.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="shell">언니의청소 서비스 소개</footer>
+</body>
+</html>
